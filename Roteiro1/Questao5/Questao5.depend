@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1575130960 source:c:\users\yasmi\desktop\roteiro1\questao5\main.cpp
+	<iostream>
+	"ControleDeGastos.h"
+
+1575130855 source:c:\users\yasmi\desktop\roteiro1\questao5\src\despesa.cpp
+	"Despesa.h"
+
+1575127543 c:\users\yasmi\desktop\roteiro1\questao5\include\despesa.h
+
+1575138637 source:c:\users\yasmi\desktop\roteiro1\questao5\src\controledegastos.cpp
+	"ControleDeGastos.h"
+	"Despesa.h"
+
+1575130143 c:\users\yasmi\desktop\roteiro1\questao5\include\controledegastos.h
+	"Despesa.h"
+

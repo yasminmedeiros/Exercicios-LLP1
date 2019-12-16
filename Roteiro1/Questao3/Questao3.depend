@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1575120981 source:c:\users\yasmi\desktop\roteiro1\questao3\main.cpp
+	<iostream>
+	<string>
+	"Empregado.h"
+
+1575091745 c:\users\yasmi\desktop\roteiro1\questao3\include\empregado.h
+	<string>
+
+1575120333 source:c:\users\yasmi\desktop\roteiro1\questao3\src\empregado.cpp
+	"Empregado.h"
+

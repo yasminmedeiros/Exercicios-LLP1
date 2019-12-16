@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1574985074 source:c:\users\yasmi\desktop\roteiro1\questao1\main.cpp
+	<iostream>
+	<Data.h>
+
+1574960283 c:\users\yasmi\desktop\roteiro1\questao1\include\data.h
+
+1574987120 source:c:\users\yasmi\desktop\roteiro1\questao1\src\data.cpp
+	"Data.h"
+

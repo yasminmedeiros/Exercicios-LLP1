@@ -1,0 +1,6 @@
+O polimorfismo é caracterizado pelo uso de uma classe abstrata para caracterizar classes 
+concretas. A diferença entre essas classes, é que a abstrata não define muito bem, que 
+tipo de objeto está sendo tratado, ao  contrário das classes concretas. Isso torna possível,
+a subescrição de métodos para cada classes concreta referenciada da abstrata, além dos 
+atributos serem passados da classe abstrata para classe concreta, sendo esta última passível
+de ser adicionados novos atributos.

@@ -8,6 +8,7 @@ class SistemaGerenciaFolha
 {
 private:
     Funcionario *funcionarios[100];
+    int id;
 public:
     SistemaGerenciaFolha();
     void setFuncionarios();

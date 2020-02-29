@@ -1,7 +1,8 @@
 #include "Funcionario.h"
 
 Funcionario::Funcionario(){}
-void Funcionario::calcularSalario(){}
+
+double Funcionario::calcularSalario(){}
 
 std::string Funcionario::getnome(){return this->nome;}
 int Funcionario::getmatricula(){return this->matricula;}

@@ -1,4 +1,8 @@
 #include "SistemaGerenciaFolha.h"
+#include "FuncionarioNaoExisteException.h"
+#include "OrcamentoEstouradoException.h"
+
+#define LimiteDePagamento 20000;
 
 SistemaGerenciaFolha::SistemaGerenciaFolha(){
     this->id=0;
@@ -66,8 +70,17 @@ double SistemaGerenciaFolha::calculaValorTotalFolha(){
     for(i=0; i<=this->id;i++){
         total+=funcionarios[i]->calcularSalario();
     }
-    return total;
-}
+    try{
+        if(total<=LimiteDePagamento){
+            return total
+        }else
+        {
+            throw OrcamentoEstouradoException *e= new OrcamentoEstouradoException();
+        }
+        
+    }catch(OrcamentoEstouradoException *e){
+        std::cout<< e.what()<<std::endl;
+    }
 double SistemaGerenciaFolha::consultaSalarioFuncionario(std::string nome){
 
 }

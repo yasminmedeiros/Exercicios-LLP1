@@ -4,6 +4,7 @@
 #include "Comissionado.h"
 #include "Horista.h"
 
+
 class SistemaGerenciaFolha
 {
 private:

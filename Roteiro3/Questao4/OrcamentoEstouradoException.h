@@ -1,12 +1,15 @@
 #pragma once
-#include <exception>
-#include <string>
 
-class OrcamentoEstouradoExcepction : public std::exception
+#include <string>
+#include <exception>
+
+class OrcamentoEstouradoException : public std::exception
 {
 public:
-     OrcamentoEstouradoExcepction (){}
-    const char *what() const noexcept{
-        return "Folha de Pagamento Extrapola Limite do Orçamento.";
-    }
+    OrcamentoEstouradoException () throw();
+    std::string getMensagem();
+
+private:
+    std::string mensagem; 
+     
 };

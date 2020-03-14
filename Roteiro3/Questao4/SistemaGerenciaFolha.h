@@ -3,9 +3,10 @@
 #include "Assalariado.h"
 #include "Comissionado.h"
 #include "Horista.h"
+#include "OrcamentoEstouradoException.h"
+#include "FuncionarioNaoExisteException.h"
 
-
-class SistemaGerenciaFolha
+class SistemaGerenciaFolha 
 {
 private:
     Funcionario *funcionarios[100];

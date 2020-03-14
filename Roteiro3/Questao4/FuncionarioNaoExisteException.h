@@ -1,11 +1,14 @@
 #pragma once
-#include <exception>
 #include <string>
+#include <exception>
 
-class FuncionarioNaoExisteExcepction : public std::exception
+
+class FuncionarioNaoExisteException : public std::exception
 {
 public:
-    const char *what() const noexcept{
-        return "Não Existe Nenhum Funcionario Com Esse Nome.";
-    }
+    FuncionarioNaoExisteException ()throw();
+    std::string getMensagem();
+
+private:
+    std::string mensagem; 
 };

@@ -27,7 +27,7 @@ void SistemaGerenciaFolha::setFuncionarios(){
     std::cin>>nome;
     std::cout<< "Matricula: ";
     std::cin>>matricula;
-    std::cout<< "Tipo de Imovel:(1-Horista, 2-Comissionado, 3-Assalariado) ";
+    std::cout<< "Tipo de Contratado:(1-Horista, 2-Comissionado, 3-Assalariado) ";
     std::cin>>tipo;
     if(tipo==1){
         std::cout<< "Salario por Hora: ";
@@ -64,19 +64,23 @@ void SistemaGerenciaFolha::setFuncionarios(){
     }
     this->id=this->id +1;
 }
-double SistemaGerenciaFolha::calculaValorTotalFolha(){
+void SistemaGerenciaFolha::calculaValorTotalFolha(){
     double total=0;
     int i;
     for(i=0; i<=this->id;i++){
         total+=funcionarios[i]->calcularSalario();
     }
-    if(total<=LimiteDePagamento){
-        return total;
-    }else
-    {
-       
-        throw OrcamentoEstouradoException();
+    try{
+        if(total<=LimiteDePagamento){
+             std::cout<<"O valor total da folha eh "<<total<<std::endl;
+        }else{
+            OrcamentoEstouradoException estourado;
+            throw estourado;
+        }
+    }catch(OrcamentoEstouradoException estourado){
+        std::cout<<estourado.getMensagem();
     }
+   
 }
 double SistemaGerenciaFolha::consultaSalarioFuncionario(std::string nome){
     for (int i=0;i<100;i++){
@@ -84,5 +88,5 @@ double SistemaGerenciaFolha::consultaSalarioFuncionario(std::string nome){
             return funcionarios[i]->calcularSalario();
         }
     }
-    throw FuncionarioNaoExisteException();
+    return 0;
 }

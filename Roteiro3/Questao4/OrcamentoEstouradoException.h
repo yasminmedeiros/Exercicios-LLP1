@@ -6,10 +6,10 @@
 class OrcamentoEstouradoException : public std::exception
 {
 public:
-    OrcamentoEstouradoException () throw();
+    OrcamentoEstouradoException ();
     std::string getMensagem();
 
 private:
-    std::string mensagem; 
+    std::string mensagem="Orcamento Estourado"; 
      
 };

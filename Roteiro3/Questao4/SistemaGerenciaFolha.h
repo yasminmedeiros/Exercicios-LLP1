@@ -14,7 +14,7 @@ private:
 public:
     SistemaGerenciaFolha();
     void setFuncionarios();
-    double calculaValorTotalFolha();
+    void calculaValorTotalFolha();
     double consultaSalarioFuncionario(std::string nome);
 };
 

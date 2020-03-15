@@ -6,9 +6,9 @@
 class FuncionarioNaoExisteException : public std::exception
 {
 public:
-    FuncionarioNaoExisteException ()throw();
+    FuncionarioNaoExisteException ();
     std::string getMensagem();
 
 private:
-    std::string mensagem; 
+    std::string mensagem="Não existe esse funcionário cadastrado."; 
 };

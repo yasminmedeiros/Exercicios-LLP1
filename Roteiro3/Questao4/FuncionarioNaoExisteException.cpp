@@ -1,6 +1,6 @@
 #include "FuncionarioNaoExisteException.h"
-FuncionarioNaoExisteException::FuncionarioNaoExisteException ()throw(){
-    this->mensagem="Não existe esse funcionário cadastrado.";
+FuncionarioNaoExisteException::FuncionarioNaoExisteException (){
+    
 }
     
 std::string FuncionarioNaoExisteException::getMensagem(){return this->mensagem;}
